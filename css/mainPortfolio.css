@@ -6,6 +6,10 @@ img{
   max-width: 100%;
 }
 
+html {
+    font: Helvetica sans-serif;
+}
+
 /* header */
 
 
@@ -16,7 +20,7 @@ header{
     margin-bottom: 10px;
 }
 
-header img{
+header img {
     margin-top: auto;
     margin-bottom: 22px;
 }
@@ -28,15 +32,13 @@ header .mainTitle{
 }
 
 header h1,
-header h4{
+header h4 {
     color: #2d3c49;
     text-align: right; 
     text-transform: uppercase;
 }
 
-
 /* main */
-
 
 .feature{
     display: flex;
@@ -53,11 +55,10 @@ header h4{
     text-decoration: none;
     width: 100%;
     text-align: center;
-    margin-top: auto;
 }
 
 .feature div{
-    margin: auto;
+    margin: auto 10px;
 }
 
 .feature h3{
@@ -85,7 +86,7 @@ header h4{
 
     .feature a,
     .feature article.noLink {
-        width: 33%;
+        width: 32%;
     }
 }
 

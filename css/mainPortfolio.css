@@ -1,7 +1,5 @@
 /* General style */
 
-
-
 img{
   max-width: 100%;
 }
@@ -11,7 +9,6 @@ html {
 }
 
 /* header */
-
 
 header{
     display: flex;

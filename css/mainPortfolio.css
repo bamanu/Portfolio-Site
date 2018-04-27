@@ -17,14 +17,14 @@ header{
 }
 
 header img{
-    justify-content: baseline;
+    margin-top: auto;
+    margin-bottom: 22px;
 }
 
-header div{
+header .mainTitle{
     flex-grow: 1;
-    min-width: 25%;
-    max-width: calc(100% - 50px);
-    margin-left: 10px;
+    max-width: calc(100% - 70px);
+    padding: 0px 10px 0px;
 }
 
 header h1,
@@ -45,14 +45,19 @@ header h4{
 
 .feature h2{
     color: #7d97ad;
+    width: 100%;
 }
 
 .feature a, 
-.feature article {
+.feature article.noLink {
     text-decoration: none;
     width: 100%;
-    max-width: 100%;
     text-align: center;
+    margin-top: auto;
+}
+
+.feature div{
+    margin: auto;
 }
 
 .feature h3{
@@ -63,6 +68,30 @@ header h4{
 .feature p{
     color: #2d3c49;
     text-decoration: none;
+    bottom: 10px;
 }
 
+/**breakpoints*/
 
+@media screen and (min-width: 450px){
+    
+    .feature a,
+    .feature article.noLink {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 900px){
+
+    .feature a,
+    .feature article.noLink {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    body{
+        max-width: 1100px;
+        margin: auto;
+    }
+}
